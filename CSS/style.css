@@ -1,0 +1,248 @@
+:root {
+    /*FONT FAMALEY*/
+    --body-font-famaley: "Nunito Sans";
+    --Hading-font-famaley: "Americana Font";
+
+    /*FONT SIZE*/
+    --font-size-text-sm: 14px;
+    --font-size-text-base: 16px;
+    --font-size-text-lg: 18px;
+    --font-size-text-4xl: 36px;
+
+    /*PADDING*/
+    --padding-first: 10px 130px;
+    --padding-second: 18px 130px;
+    --padding-third: 20px 130px;
+    --padding-Fourth: 0px 130px;
+    --padding-Fifth: 80px 130px;
+    --padding-Sixth: 10px;
+    --padding-top-Seventh: 80px;
+    --padding-Eight:16px 42px;
+
+    /*Gap*/
+    --gap-first: 20px;
+    --gap-second: 30px;
+    --gap-third: 40px;
+    --gap-fourth: 80px;
+
+    /*FONT WEIGHT*/
+    --font-weight-first: 400;
+    --font-weight-second: 500;
+    --font-weight-third: 600;
+    --font-weight-fourth: 700;
+
+    /*LINE HEIGHT*/
+    --line-height-first: 100%;
+
+    /*LETTER SPACING*/
+    --Letter-spacing-first: 0%;
+}
+
+/*FONT-FACE*/
+
+@font-face {
+    font-family: "Americana Font";
+    src: url(../Asstas/americanabt_roman.ttf);
+}
+@font-face {
+    font-family: "Nunito Sans";
+    src: url(../Asstas/NunitoSans-Regular.ttf);
+}
+
+/*COLOR SCHEME 1*/
+
+.color-scheme1 {
+    --background-color-first: #26A3DB;
+    --text-color-first: #ffffff;
+    --button-backgrond-first: #26A3DB;
+    --button-background-second: #ffffff;
+    --button-text-color-first: #ffffff;
+    --button-text-color-second: #000309;
+}
+
+/*COLOR SCHEME 2*/
+
+.color-scheme2 {
+    --background-color-first: #E9F6FB;
+    --text-color-first: #000309;
+    --text-color-second: #26A3DB;
+    --button-text-color-second: #000309;
+}
+
+/*COLOR SCHEME 3*/
+
+.color-scheme3 {
+    --background-color-first: #ffffff;
+    --text-color-first: #000309;
+    --text-color-second: #26A3DB;
+    --button-backgrond-first: #26A3DB;
+    --button-text-color-first: #ffffff;
+    --button-text-color-second: #000309;
+}
+
+/*RESAT CSS*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    overflow: hidden;
+}
+
+.link:hover{
+    color:#26A3DB;
+    text-decoration: underline;
+}
+button.button-first:hover{
+    background-color: var(--button-background-second);
+    color: var( --background-color-first);
+}
+.Heading{
+    font-size: var(--font-size-text-4xl);
+    font-weight: var(--font-weight-second);
+    font-family: var(--Hading-font-famaley);
+    color:var(--text-color-first) ;
+}
+
+.paragraph{
+    font-size: var(--font-size-text-base);
+    font-weight: var(--font-weight-first);
+    font-family: var(--body-font-famaley);
+      color:var(--text-color-first) ;
+}
+
+button.button-first {
+    padding: var(--padding-Eight);
+    border-radius: 5px;
+    background-color: var(--button-backgrond-first);
+    color: var(--button-text-color-first);
+}
+/*PAGE WIDTH*/
+
+.page-width{
+    max-width: 1600px;
+    margin: auto;
+}
+
+p.announcement-bar-text {
+    text-align: center;
+    font-size: var(--font-size-text-sm);
+    font-family: var(--body-font-famaley);
+    font-weight: var(--font-weight-first);
+    line-height: var(--line-height-first);
+    letter-spacing: var(--Letter-spacing-first);
+    font-style: normal;
+    padding: 2.5px 0px 2.5px 0px;
+}
+.announcement-bar-wrapper {
+    background-color: var(    --background-color-first);
+    color: var(--text-color-first);
+    padding: var(--padding-first);
+    display: flex;
+    display: flex;
+    justify-content: center;
+}
+
+/*Header css*/
+
+.logo{
+    max-width: 103.01px;
+    width: 103.01px;
+    max-height: 50px;
+    height: 50px;
+}
+
+ul.navlink {
+    display: flex;
+    gap: var(--gap-first);
+    max-width: 422px;
+    max-height: 19px;
+}
+
+.icon-bar {
+    display: flex;
+    gap: 20px;
+    max-width: 623px;
+    justify-content: end;
+    max-height: 24px;
+    
+}
+.icon {
+    cursor: pointer;
+}
+
+.header {
+    position: absolute;
+    z-index: 2;
+    top: 39px;
+    width: 100%;
+}
+
+.header-wrapper {
+    display: grid;
+    padding: var(--padding-second);
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 30px;
+    background: transparent;
+}
+
+.link{
+    font-size: var(--font-size-text-sm);
+    font-family: var(--body-font-famaley);
+    font-weight: var(--font-weight-second);
+    color: #ffffff;
+}
+
+/* banner section */
+
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+}
+
+
+
+.banner-content {
+    padding: var( --padding-Fourth);
+}
+
+button.button-first {
+    padding: var(--padding-Eight);
+    border-radius: 5px;
+}
+.banner-text-inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-second);
+    position: absolute;
+    top: 258px;
+    z-index: 1;
+    width: 505px;
+    height: 273.33px;
+}
+.banner-paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.swiper-image{
+    aspect-ratio: 22/9;
+}
